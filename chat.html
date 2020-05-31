@@ -9,9 +9,10 @@
       integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Chat| Kakao Clone</title>
   </head>
-  <body>
+  <bod class="chats-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">13:54</span>
@@ -20,14 +21,14 @@
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
-        <span class="status-bar__batter-level">100%</span>
+        <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
       </div>
     </div>
     <header class="header">
       <div class="header__header-column">
-        <a href="more.html" class="">
-          <i class="fas fa-arrow-left fa-2x"></i>
+        <a href="index.html" class="header__back-btn">
+          <i class="fas fa-arrow-left"></i>
         </a>
         <hi class="header__title">Best Friend</hi>
       </div>
@@ -35,31 +36,31 @@
         <span class="header__icon">
           <i class="fas fa-search"></i>
         </span>
-        <div class="header__icon">
+        <span class="header__icon">
           <i class="fas fa-bars"></i>
-        </div>
+        </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Friday, January 11, 2019</span>
         <li class="incoming-message message">
-          <img src="images/avatar.jpg" class="g-avatar message__avatar" />
-          <div class="message__content">
-            <span class="message__author">Best Friend</span>
-            <div class="message__bubble">
+          <img src="images/avatar.jpg" class="m-avatar message__avatar" />
+          <div class="message__content">   
+            <span class="message__bubble">
               황찬성 결혼하자
-            </div>
+            </span>
+            <span class="message__author">Best Friend</span>
           </div>
           <span class="message__timestamp"></span>
         </li>
-        <li class="incoming-message message">
+        <li class="sent-message message">
           <span class="message__timestamp"></span>
           <div class="message__content">
             <div class="message__bubble">
               완전 좋아
             </div>
-          </div>
+          </div>  
         </li>
       </ul>
     </main>
